@@ -8,6 +8,22 @@
 :root{
   --bg:#f6f8fb; --card:#fff; --accent:#0b76ef; --muted:#6b7280;
 }
+.thumb {
+  height: 140px;                 
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;              
+  background: linear-gradient(135deg,#eef5ff,#fbfdff);
+}
+.thumb img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;          
+  display: block;
+  border-radius: 6px;
+}
 *{box-sizing:border-box}
 body{
   margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; background:var(--bg); color:#0b1220;
@@ -48,7 +64,7 @@ a.btn:focus{outline:3px solid rgba(11,118,239,0.18)}
       <!-- Project card 1 -->
       <article class="card" aria-labelledby="p1">
         <div class="thumb" role="img" aria-label="Poster thumbnail for Project One">
-          <img src="files/lando1.jpg" alt="Thumbnail of Project One poster"> 
+          <img src="files/lando1.jpg" alt="Thumbnail of Project One poster" loading="lazy"> 
         </div>
         <h2 id="p1" class="title">Where's Lando?</h2>
         <p class="desc">Short description of Project One — one sentence about what it does or why it’s interesting.</p>
