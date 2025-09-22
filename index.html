@@ -62,6 +62,10 @@ h1{font-size:clamp(1.25rem,2.5vw,1.8rem); margin:0}
 .title{font-size:1.05rem; margin:0}
 .desc{color:var(--muted); margin:0; font-size:0.95rem}
 .actions{margin-top:auto; display:flex; gap:8px; flex-wrap:wrap}
+.btn-group {
+  display: flex;
+  gap: 8px; 
+}
 a.btn{display:inline-block; text-decoration:none; padding:8px 12px; border-radius:8px; font-weight:600; font-size:0.95rem}
 .btn-primary{background:var(--accent); color:white}
 .btn-outline{background:white; border:1px solid #e6e9ef; color:#0b1220}
@@ -124,10 +128,12 @@ a.btn:focus{outline:3px solid rgba(11,118,239,0.18)}
         <h2 id="p3" class="title">Using OpenCV/Tesseract to convert PDF to text</h2>
         <p class="desc">xyz.</p>
         <div class="actions">
-          <a class="btn btn-outline" href="https://pdf-to-text-frontend.vercel.app/" target="_blank" rel="noopener noreferrer">View app</a>
-          <a class="btn btn-outline" href="https://github.com/lark-wang/pdf-to-text-frontend" target="_blank" rel="noopener noreferrer">View frontend code </a>
-          <a class="btn btn-outline" href="https://github.com/lark-wang/pdf-to-text" target="_blank" rel="noopener noreferrer">View backend code </a>
-        </div>
+        <a class="btn btn-outline" href="https://pdf-to-text-frontend.vercel.app/" target="_blank" rel="noopener noreferrer">View app</a>
+          <div class="btn-group">
+            <a class="btn btn-outline" href="https://github.com/lark-wang/pdf-to-text-frontend" target="_blank" rel="noopener noreferrer">Frontend code</a>
+            <a class="btn btn-outline" href="https://github.com/lark-wang/pdf-to-text" target="_blank" rel="noopener noreferrer">Backend code</a>
+          </div>
+         </div>
       </article>
     </div>
   
