@@ -32,7 +32,23 @@ body{
 .container{max-width:980px; margin:0 auto}
 header{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:20px}
 h1{font-size:clamp(1.25rem,2.5vw,1.8rem); margin:0}
-.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* always 4 across */
+  gap: 18px;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* switch to 2x2 */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr; /* stack on very small screens */
+  }
+}
 .card{
   background:var(--card); padding:16px; border-radius:12px;
   box-shadow:0 8px 20px rgba(22,30,41,0.06);
