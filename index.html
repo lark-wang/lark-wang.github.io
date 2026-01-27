@@ -18,7 +18,7 @@ header{display:flex; align-items:center; justify-content:space-between; gap:12px
 h1{font-size:clamp(1.25rem,2.5vw,1.8rem); margin:0}
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 18px;
 }
 @media (max-width: 900px) {
@@ -28,18 +28,18 @@ h1{font-size:clamp(1.25rem,2.5vw,1.8rem); margin:0}
   .grid {grid-template-columns: 1fr;}
 }
 .card{
-  background:var(--card); padding:16px; border-radius:12px;
+  background:var(--card); padding:12px; border-radius:12px;
   box-shadow:0 8px 20px rgba(22,30,41,0.06);
   display:flex; flex-direction:column; gap:12px; transition:transform .18s ease,box-shadow .18s;
 }
 .card:hover{transform:translateY(-6px); box-shadow:0 14px 36px rgba(22,30,41,0.12)}
 .thumb{
-  height:140px; border-radius:8px; display:flex; align-items:center; justify-content:center;
+  height:120px; border-radius:8px; display:flex; align-items:center; justify-content:center;
   background:linear-gradient(135deg,#eef5ff,#fbfdff); color:#214; font-weight:700;
 }
 .thumb img{max-width:100%; max-height:100%; object-fit:contain; display:block; border-radius:6px;}
-.title{font-size:1.05rem; margin:0}
-.desc{color:var(--muted); margin:0; font-size:0.95rem}
+.title{font-size:1.0rem; margin:0}
+.desc{color:var(--muted); margin:0; font-size:0.9rem}
 .actions{margin-top:auto; display:flex; gap:8px; flex-wrap:wrap}
 .btn-group{display:flex; gap:8px;}
 a.btn{display:inline-block; text-decoration:none; padding:8px 12px; border-radius:8px; font-weight:600; font-size:0.95rem;}
@@ -97,7 +97,7 @@ a.btn:focus{outline:3px solid rgba(11,118,239,0.18);}
       <h2 id="p2" class="title">Django / LLM Project</h2>
       <p class="desc">Django-based web app that takes in data and generates text using Google Gemini API for user download.</p>
       <div class="actions">
-        <a class="btn btn-primary" href="https://github.com/lark-wang/django_project" target="_blank" rel="noopener noreferrer">View code (GitHub)</a>
+        <a class="btn btn-primary" href="https://github.com/lark-wang/django_project" target="_blank" rel="noopener noreferrer">View project (GitHub)</a>
       </div>
     </article>
 
